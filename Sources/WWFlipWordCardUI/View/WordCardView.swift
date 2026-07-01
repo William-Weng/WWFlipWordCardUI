@@ -12,10 +12,10 @@ import SwiftUI
 /// 根據 `isFlipped` 決定顯示正面（英文 + 音標）或背面（中文翻譯）
 struct WordCardView: View {
     
-    let wordCard: WordCard          // 當前單字資料
-    let isFlipped: Bool             // 是否顯示翻面狀態
-    let isAscending: Bool           // 英文與音標的順序 (英日文顯示不同)
-    let configure: Configure        // 文字相關設定
+    let wordCard: WWFlipWordCardUI.WordCard     // 當前單字資料
+    let isFlipped: Bool                         // 是否顯示翻面狀態
+    let isAscending: Bool                       // 英文與音標的順序 (英日文顯示不同)
+    let configure: WWFlipWordCardUI.Configure   // 文字相關設定
     
     var body: some View {
         background
