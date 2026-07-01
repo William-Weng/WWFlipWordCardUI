@@ -13,6 +13,8 @@ WWFlipWordCardUI is a SwiftUI-based word card component for building vocabulary 
 
 It is designed for language learning apps, educational tools, and any interface that needs a clean and customizable card presentation.
 
+https://github.com/user-attachments/assets/567425de-0bb0-4e28-9d6f-14fa68f040e4
+
 ## ✨ Features
 
 - SwiftUI native view.

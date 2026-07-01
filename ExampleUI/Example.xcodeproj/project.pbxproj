@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		810B7A392FF5084700F0AB6B /* WWFlipWordCardUI in Frameworks */ = {isa = PBXBuildFile; productRef = 810B7A382FF5084700F0AB6B /* WWFlipWordCardUI */; };
+		810B7A3C2FF5086000F0AB6B /* WWFlipWordCardUI in Frameworks */ = {isa = PBXBuildFile; productRef = 810B7A3B2FF5086000F0AB6B /* WWFlipWordCardUI */; };
 		81A3823E2FF4FF4200CC2437 /* WWFlipWordCardUI in Frameworks */ = {isa = PBXBuildFile; productRef = 81A3823D2FF4FF4200CC2437 /* WWFlipWordCardUI */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +29,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				810B7A3C2FF5086000F0AB6B /* WWFlipWordCardUI in Frameworks */,
 				81A3823E2FF4FF4200CC2437 /* WWFlipWordCardUI in Frameworks */,
+				810B7A392FF5084700F0AB6B /* WWFlipWordCardUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +75,8 @@
 			name = Example;
 			packageProductDependencies = (
 				81A3823D2FF4FF4200CC2437 /* WWFlipWordCardUI */,
+				810B7A382FF5084700F0AB6B /* WWFlipWordCardUI */,
+				810B7A3B2FF5086000F0AB6B /* WWFlipWordCardUI */,
 			);
 			productName = Example;
 			productReference = 8177C5772F91CB0F00ACEA3E /* Example.app */;
@@ -101,7 +107,7 @@
 			mainGroup = 8177C56E2F91CB0F00ACEA3E;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				81A3823C2FF4FF4200CC2437 /* XCLocalSwiftPackageReference "../../@WWFlipWordCardUI" */,
+				810B7A3A2FF5086000F0AB6B /* XCRemoteSwiftPackageReference "WWFlipWordCardUI" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8177C5782F91CB0F00ACEA3E /* Products */;
@@ -338,14 +344,27 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		81A3823C2FF4FF4200CC2437 /* XCLocalSwiftPackageReference "../../@WWFlipWordCardUI" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = "../../@WWFlipWordCardUI";
+/* Begin XCRemoteSwiftPackageReference section */
+		810B7A3A2FF5086000F0AB6B /* XCRemoteSwiftPackageReference "WWFlipWordCardUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/William-Weng/WWFlipWordCardUI";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.0.0;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		810B7A382FF5084700F0AB6B /* WWFlipWordCardUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WWFlipWordCardUI;
+		};
+		810B7A3B2FF5086000F0AB6B /* WWFlipWordCardUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 810B7A3A2FF5086000F0AB6B /* XCRemoteSwiftPackageReference "WWFlipWordCardUI" */;
+			productName = WWFlipWordCardUI;
+		};
 		81A3823D2FF4FF4200CC2437 /* WWFlipWordCardUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = WWFlipWordCardUI;

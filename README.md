@@ -13,6 +13,8 @@
 
 這個元件的設計目標是：讓你可以快速建立乾淨、可自訂、容易整合的單字卡 UI。
 
+https://github.com/user-attachments/assets/567425de-0bb0-4e28-9d6f-14fa68f040e4
+
 ## ✨ 功能特色
 
 - SwiftUI 原生元件。

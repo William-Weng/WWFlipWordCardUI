@@ -1,0 +1,15 @@
+{
+  "originHash" : "77dd87c9c0c430020fa71a6dee7aa88f50b75759523507f19da9878464aa9d14",
+  "pins" : [
+    {
+      "identity" : "wwflipwordcardui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/William-Weng/WWFlipWordCardUI",
+      "state" : {
+        "revision" : "88ab3808dac248b6eab4a9f972f14b4c697144bd",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}
