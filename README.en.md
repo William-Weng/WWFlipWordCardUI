@@ -9,23 +9,24 @@
 [![Swift Package Manager-SUCCESS](https://img.shields.io/badge/Swift_Package_Manager-SUCCESS-blue.svg?style=flat)](https://developer.apple.com/swift/)
 [![LICENSE](https://img.shields.io/badge/LICENSE-MIT-yellow.svg?style=flat)](https://developer.apple.com/swift/)
 
-一個基於 SwiftUI 的單字卡元件，支援翻頁式卡片互動，適合用於單字學習、語言學習與教育類 App。
+WWFlipWordCardUI is a SwiftUI-based word card component for building vocabulary flashcards with a flip interaction.
 
-這個元件的設計目標是：讓你可以快速建立乾淨、可自訂、容易整合的單字卡 UI。
+It is designed for language learning apps, educational tools, and any interface that needs a clean and customizable card presentation.
 
-## ✨ 功能特色
+## ✨ Features
 
-- SwiftUI 原生元件。
-- 翻頁式單字卡互動效果。
-- 可依照 level 自訂顏色。
-- 可依照詞性 / 類別自訂顏色。
-- 可自訂單字、音標、中文的字體。
-- 支援 `currentIndex` 綁定，方便外部控制目前卡片。
-- 支援卡片切換回呼。
+- SwiftUI native view.
+- Flip-style word card interaction.
+- Customizable colors by level and category.
+- Customizable fonts for word, reading, and Chinese text.
+- Supports an index binding for controlling the current card.
+- Callback when the card changes.
 
-## 🚀 安裝方式
+## 🚀 Installation
 
 ### Swift Package Manager
+
+Add `WWFlipWordCardUI` to your project using Swift Package Manager:
 
 ```swift
 dependencies: [
@@ -33,9 +34,9 @@ dependencies: [
 ]
 ```
 
-## 💡 使用方式
+## 💡 Usage
 
-先 import 套件，並建立 `Configure` 來設定顏色與字體。
+Import the module and create a `Configure` instance to customize colors and fonts.
 
 ```swift
 import SwiftUI
@@ -82,23 +83,23 @@ struct ContentView: View {
 }
 ```
 
-## 🧩 API 說明
+## 🧩 API Overview
 
 ### `Configure`
 
-`Configure` 用來設定單字卡的外觀。
+Use `Configure` to customize the appearance of the card.
 
-- `levelColors`：依照 level 對應顏色。
-- `categoryColors`：依照詞性或類別對應顏色。
-- `wordFont`：單字字體。
-- `readingFont`：音標 / 讀音字體。
-- `chineseFont`：中文翻譯字體。
+- `levelColors`: color mapping for CEFR levels or other level tags.
+- `categoryColors`: color mapping for part-of-speech categories.
+- `wordFont`: font for the main word.
+- `readingFont`: font for phonetic reading.
+- `chineseFont`: font for Chinese translation.
 
 ### `WordCard`
 
-代表一筆單字資料。
+Represents a single vocabulary card item.
 
-常見欄位如下：
+Typical fields include:
 
 - `id`
 - `word`
@@ -109,13 +110,12 @@ struct ContentView: View {
 
 ### `WWFlipWordCardUI`
 
-主要的 SwiftUI 單字卡元件。
+The main SwiftUI view that renders the flip card UI.
 
-參數說明：
+Parameters:
 
-- `words`：單字資料陣列。
-- `isAscending`：控制卡片排序方式。
-- `currentIndex`：目前卡片索引的綁定值。
-- `configure`：外觀設定。
-- `closure`：卡片切換時的回呼。
-
+- `words`: the card data source.
+- `isAscending`: controls the ordering behavior.
+- `currentIndex`: binding for the current displayed card index.
+- `configure`: style configuration.
+- `trailing closure`: callback when the card changes.
