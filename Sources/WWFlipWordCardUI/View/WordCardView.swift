@@ -98,9 +98,9 @@ private extension WordCardView {
                 
                 if isAscending {
                     wordView
-                    readingView
+                    if (!wordCard.reading.isEmpty) { readingView }
                 } else {
-                    readingView
+                    if (!wordCard.reading.isEmpty) { readingView }
                     wordView
                 }
                 

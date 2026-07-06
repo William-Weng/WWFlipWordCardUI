@@ -10,7 +10,7 @@ import WWFlipWordCardUI
 
 struct ContentView: View {
     
-    let config: Configure = .init(
+    let config: WWFlipWordCardUI.Configure = .init(
         levelColors: [
             "A2": .black,
             "B1": .purple,
@@ -26,7 +26,7 @@ struct ContentView: View {
         chineseFont: .system(size: 32, weight: .bold, design: .rounded)
     )
     
-    @State private var words: [WordCard] = [
+    @State private var words: [WWFlipWordCardUI.WordCard] = [
         .init(id: 1, word: "ability", reading: "/əbɪləti/", categories: ["名詞"], chinese: "能力、才能", level: "A2"),
         .init(id: 2, word: "apparent", reading: "/əpɛrənt/", categories: ["形容詞"], chinese: "顯然的", level: "B1"),
         .init(id: 3, word: "observe", reading: "/əbzɝv/", categories: ["動詞"], chinese: "注意到、觀察", level: "B2"),
