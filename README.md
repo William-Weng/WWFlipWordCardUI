@@ -31,7 +31,7 @@ https://github.com/user-attachments/assets/567425de-0bb0-4e28-9d6f-14fa68f040e4
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/William-Weng/WWFlipWordCardUI.git", from: "1.0.2")
+    .package(url: "https://github.com/William-Weng/WWFlipWordCardUI.git", from: "1.0.3")
 ]
 ```
 

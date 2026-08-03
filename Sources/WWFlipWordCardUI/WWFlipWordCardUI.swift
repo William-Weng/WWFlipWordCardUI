@@ -99,14 +99,14 @@ private extension WWFlipWordCardUI {
     ///
     /// 依照拖曳方向決定要取上一筆或下一筆，讓卡片堆疊在滑動時能自然更新，同樣使用 `[safe:]` 保護索引，避免資料不足時越界
     var backWord: WordCard? {
-        words[safe: loopIndex(currentIndex + (dragOffset < 0 ? -1 : 1))]
+        words[safe: loopIndex(currentIndex + (dragOffset < 0 ? 1 : -1))]
     }
     
     /// 最後一層預覽卡片要顯示的單字
     ///
     /// 依照拖曳方向再往外推一筆，作為三層卡片堆疊中的最底層預覽，透過 `[safe:]` 讓這層卡片也能在資料變動時維持安全
     var farBackWord: WordCard? {
-        words[safe: loopIndex(currentIndex + (dragOffset < 0 ? -2 : 2))]
+        words[safe: loopIndex(currentIndex + (dragOffset < 0 ? 2 : -2))]
     }
 }
 
