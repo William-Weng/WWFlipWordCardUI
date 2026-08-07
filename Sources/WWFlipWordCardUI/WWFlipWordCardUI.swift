@@ -244,10 +244,8 @@ private extension WWFlipWordCardUI {
             try await Task.sleep(for: .milliseconds(110))
             
             update()
-            isFlipped = false
-            dragOffset = -direction.rawValue * 12
-            
-            withAnimation(.easeOut(duration: 0.09)) { dragOffset = 0 }
+            isFlipped = false            
+            withAnimation(.easeOut(duration: 0)) { dragOffset = 0 }
             
             try await Task.sleep(for: .milliseconds(100))
             isAnimatingPage = false

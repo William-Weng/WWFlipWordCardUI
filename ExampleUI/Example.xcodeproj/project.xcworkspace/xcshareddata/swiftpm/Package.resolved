@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/William-Weng/WWFlipWordCardUI",
       "state" : {
-        "revision" : "94a12dc67d202b9df02be72c1dcde378d26bc741",
-        "version" : "1.0.2"
+        "revision" : "9fdd06082c43d820fee2dbfb4c121cd636a0dd24",
+        "version" : "1.0.3"
       }
     }
   ],
